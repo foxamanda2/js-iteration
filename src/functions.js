@@ -24,7 +24,7 @@
  */
 
 const yelling = words => {
-  // Your code here
+  return (uppercased = words.map(word => word.toUpperCase()))
 }
 
 /**
@@ -36,8 +36,9 @@ const yelling = words => {
  * NOTE: You may *not* use the `forEach` or `for` method.
  *
  */
-
-// ...
+const doubleTrouble = number => {
+  return (multiplyNum = number.map(num => num * 2))
+}
 
 /*
  * 3) Define a function stringyIndexes() that takes an array of
@@ -47,7 +48,11 @@ const yelling = words => {
  * NOTE: You may *not* use the `forEach` or `for` method.
  *
  */
-
+const stringyIndexes = strings => {
+  return (indexX = strings.map(
+    (string, index) => `${string} is at index ${index}`
+  ))
+}
 // ...
 
 /*
@@ -58,7 +63,9 @@ const yelling = words => {
  *
  */
 
-// ...
+const onlyTheEvenSurvive = numbers => {
+  return (onlyEven = numbers.filter(number => number % 2 == 0))
+}
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
@@ -67,8 +74,9 @@ const yelling = words => {
  * NOTE: You may *not* use the `forEach` or `for` method.
  *
  */
-
-// ...
+const onlyTheEvenIndexedSurvive = numbers => {
+  return (onlyEvenIndex = numbers.filter((number, index) => index % 2 == 0))
+}
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
@@ -87,7 +95,11 @@ const yelling = words => {
  *
  */
 
-// ...
+const bestMoviesOfTheYear = (movies, yearToMatch) => {
+  return (movies90 = movies
+    .filter(movie => movie.score > 90 && movie.year == yearToMatch)
+    .map(movie => movie.name))
+}
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
@@ -97,8 +109,9 @@ const yelling = words => {
  * NOTE: You may *not* use the `forEach` or `for` method.
  *
  */
-
-// ...
+const everyoneIsOdd = numbers => {
+  return (oddNum = numbers.every(num => num % 2 == 1))
+}
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
@@ -109,7 +122,9 @@ const yelling = words => {
  *
  */
 
-// ...
+const findTheNeedle = string => {
+  return (findNeedle = string.first(string => string.includes('needle')))
+}
 
 /*
  * 9) Define a function findTheNeedleIndex that accepts an array of
