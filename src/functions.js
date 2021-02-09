@@ -123,7 +123,7 @@ const everyoneIsOdd = numbers => {
  */
 
 const findTheNeedle = string => {
-  return (findNeedle = string.first(string => string.includes('needle')))
+  return (findNeedle = string.find(string => string.includes('needle')))
 }
 
 /*
@@ -135,7 +135,11 @@ const findTheNeedle = string => {
  *
  */
 
-// ...
+const findTheNeedleIndex = string => {
+  return (needleIndex = string.findIndex(sentence =>
+    sentence.includes('needle')
+  ))
+}
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
@@ -146,7 +150,9 @@ const findTheNeedle = string => {
  *
  */
 
-// ...
+const someoneToLove = string => {
+  return (wordCount = string.some(word => word.length === 4))
+}
 
 /*
  * 11)  Define a function objectKeys that accepts an object of
@@ -182,7 +188,10 @@ const findTheNeedle = string => {
  */
 
 // function objectKeys(objectOfHobbies) {
-//   // Your code here
+//   const entries = Object.entries(objectOfHobbies)
+//   const answer = entries.map(([key, value]) => {
+//     return `${key}-${value.title}`
+//   })
 // }
 
 // ...
