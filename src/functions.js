@@ -187,12 +187,14 @@ const someoneToLove = string => {
  *
  */
 
-// function objectKeys(objectOfHobbies) {
-//   const entries = Object.entries(objectOfHobbies)
-//   const answer = entries.map(([key, value]) => {
-//     return `${key}-${value.title}`
-//   })
-// }
+function objectKeys(objectOfHobbies) {
+  const entries = Object.entries(objectOfHobbies)
+
+  const answer = entries.map(([key, value]) => {
+    return `${key} - ${value.title}`
+  })
+  return answer
+}
 
 // ...
 
